@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="" class="header__logo">
+          <img src="https://via.placeholder.com/80/80" alt="" class="header__logo-img" width="79" height="80">
+        </a>
+        <nav class="header__nav slide">
+          <a class="header__nav-link slide__link" href="#">Portfolio</a>
+          <a class="header__nav-link slide__link" href="#">Skills</a>
+          <a class="header__nav-link slide__link" href="#">Resume</a>
+          <a class="header__nav-link slide__link" href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- ЗАСТАВКА -->
+    <section class="promo">
+      <img class="promo__image" src="https://via.placeholder.com/750/650" alt="" class="header__logo-img" width="750"
+        height="650">
+      <h1 class="promo__header">
+        <span class="promo__header-line">Высоцкий Артем.</span>
+        <span class="promo__header-line">Junior</span>
+        <span class="promo__header-line">Frontend-разработчик</span>
+      </h1>
+      <p class="promo__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos corrupti, sequi
+        quae voluptate modi est. Adipisci soluta, culpa, facere aut doloremque dolores inventore natus consectetur quos
+        deserunt aperiam ab.</p>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__heading">Portfolio</div>
+        <div id="app" class="card__container">
+          <div class="portfolio__item">
+            <a href="#">
+              <card data-image="img/cat-energy-desktop.png">
+                <h1 class="card__header" slot="card__header">Cat Energy</h1>
+                <p class="card__content" slot="card__content">Магазин функционального питания для котов
+                </p>
+              </card>
+            </a>
+            <div class="portfolio__info-wrapper">
+              <div class="portfolio__info">
+                <p class="portfolio__descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quod
+                  molestiae
+                  repellendus vel culpa id dicta voluptate
+                  eveniet minima harum delectus incidunt perferendis quos commodi</p>
+
+                <p class="portfolio__descr">exercitationem a ab, non asperiores numquam nisi. Hic non, impedit placeat
+                  asperiores enim amet optio
+                  laudantium, cum possimus qui debitis aut dicta velit perspiciatis aperiam!</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <div class="portfolio__info-wrapper">
+              <div class="portfolio__info">
+                <p class="portfolio__descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quod
+                  molestiae
+                  repellendus vel culpa id dicta voluptate
+                  eveniet minima harum delectus incidunt perferendis quos commodi</p>
+
+                <p class="portfolio__descr">exercitationem a ab, non asperiores numquam nisi. Hic non, impedit placeat
+                  asperiores enim amet optio
+                  laudantium, cum possimus qui debitis aut dicta velit perspiciatis aperiam!</p>
+              </div>
+            </div>
+            <a href="#">
+              <card data-image="img/mishka-desktop.png">
+                <h1 class="card__header" slot="card__header">Mishka</h1>
+                <p class="card__content" slot="card__content">Магазин вязанных товаров ручной работы</p>
+              </card>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div id="app" class="card__container">
+      <card
+        data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+        <h1 class="card__header" slot="card__header">Lakes</h1>
+        <p class="card__content" slot="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </card>
+    </div>
+
+    <!-- НАВЫКИ -->
+    <section class="skillset">
+      <div class="container">
+        <div class="skillset__inner">
+          <article class="skillset__know">What I know</article>
+          <article class="skillset__familiarized">Familiarized</article>
+          <article class="skillset__planning">Planning</article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/slide.js"></script>
+  <script src="js/vue.min.js"></script>
+  <script src="js/card.babel"></script>
+</body>
+
+</html>

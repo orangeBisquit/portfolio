@@ -1,0 +1,10 @@
+.skillset {
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+
+.skillset__inner {
+  display: flex;
+  justify-content: space-between;
+}

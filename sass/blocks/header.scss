@@ -1,0 +1,30 @@
+.header {
+  padding-bottom: 78px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 55vw;
+    height: 900px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    background-color: darken($main-orange, 46%);
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-link {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 30px 10px;
+  font-size: 18px;
+  color: $light;
+  text-decoration: none;
+}
